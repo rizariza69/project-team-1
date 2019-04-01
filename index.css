@@ -8,11 +8,15 @@
   padding: 0 0 0 30px;
 }
 
+body {
+  background-color:#F6F6F6;
+}
 .navigation {
   display: flex;
   justify-content: left;
   font-size: 24px;
   background-color: #FFFFFF;
+  border-bottom: 1px black solid;
   
 }
 
@@ -26,11 +30,13 @@
 
 }
 
-.header h1 {
+.header {
   background-image: url(images/header.jpg);
+  /* background-repeat: no-repeat; */
   height:449px;
+  width:100%;
   display:flex;
-  margin:0 0 100px 0;
+  /* margin-right: 100%; */
 }
 
 .container {
@@ -72,7 +78,7 @@
 
 .tour-service-box-1 {
   width:350px;
-  height: 328px;
+  /* height: 328px; */
   background-color: #7F76E0;
   display:inline-block;
   margin-left: 50px;
@@ -102,9 +108,11 @@
   color:white;
 }
 
+
+
 .tour-service-box-2 {
   width:350px;
-  height: 328px;
+  /* height: 328px; */
   background-color: #7F76E0;
   display:inline-block;
   margin-left: 50px;
@@ -114,6 +122,11 @@
   font-family: pavanam;
   font-size:24px;
   color:white;
+}
+.tour-service-box-2 a{
+  justify-content: center;
+  align-items: center;
+  height: 52px;
 }
 
 .tour-service-box-2 .tour-service-box-2-title p{
@@ -136,7 +149,7 @@
 
 .tour-service-box-3 {
   width:350px;
-  height: 328px;
+  /* height: 328px; */
   background-color: #7F76E0;
   display:inline-block;
   margin-left: 50px;
@@ -147,6 +160,8 @@
   font-size:24px;
   color:white;
 }
+
+
 
 .tour-service-box-3 .tour-service-box-3-title p{
   font-family: hind;
@@ -166,14 +181,18 @@
   color:white;
 }
 
-.tour-service-3-button {
-  display:flex;
-  justify-content: center;
-  align-items: center;
+.tour-service-box-button{
   background-color:#30349C;
-  height: 52px;
-  width: 175px; 
+  height:52px;
+  width:175;
+  color:white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "hind","pavanam";
 }
+
+/* footer contact */
 
 .footer-contact {
   background-color:#7F76E0; 
@@ -283,6 +302,9 @@ text-decoration: none;
   width: 255px;
   padding-top: 70px;
 }
+/* end footer contact */
+
+/* footer */
 .footer {
   background-color:#30349C;
   color: white;
@@ -300,6 +322,9 @@ text-decoration: none;
   font-size: 18px;
   margin-top: 0;
 }
+/* end footer */
+
+/* about start */
 
 .about {
   display: flex;
@@ -307,6 +332,7 @@ text-decoration: none;
   align-self: center;
   font-family: hind;
   font-size: 48px;
+  margin-bottom: 0;
 }
 
 .about-description p{
@@ -318,3 +344,129 @@ text-decoration: none;
   font-size: 48px;
   margin-top:0;
 }
+/* end about */
+
+/* contact */
+
+.form-contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* padding-top:40px;
+  padding-left:120px; */
+  align-items: center;
+}
+
+.contact-title{
+  /* display: flex;
+  justify-content: flex-start; */
+  font-family: "hind","pavanam";
+  font-size:48px;
+  margin-bottom: 0px;
+  margin-left: 150px;
+  align-items: flex-start;
+}
+
+.contact-top input{
+  width:450px;
+  height:61px;
+  margin-right:20px;
+  margin-bottom: 20px;
+  background-color: #E2E1EB;
+  font-family: "pavanam","hind";
+  font-size: 24px;
+  padding: 10px;
+
+}
+
+.contact-bottom .text-area{
+  width: 930px;
+  height: 430px;
+  background-color: #E2E1EB;
+  margin-bottom: 20px;
+  font-family: "pavanam","hind";
+  font-size: 24px;
+  padding: 20px;
+  
+}
+
+.contact-button button{
+  background-color:#30349C;
+  font-family: "hind","pavanam";
+  font-size:20px;
+  width:975px;
+  height:40px;
+  color: #FFFFFF;
+}
+.contact-button button:hover{
+  background-color: #FFFFFF;
+  color: #30349C;
+}
+/* end contact */
+
+/* tour package */
+.tour-package {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top:50px;
+  margin-bottom: 30px;
+}
+
+.tour-box-top-1{
+  background-color: #7F76E0;
+  color: white;
+  font-family: "pavanam","hind";
+  font-size: 24px;
+  width: 800px;
+  height: 150px;
+  padding: 0;
+ 
+}
+
+.tour-box-1-price{
+  /* margin-top: 0; */
+  margin: 0;
+
+}
+
+.tour-package p{
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding-top:10px;
+  
+}
+
+.tour-box-mid-1 {
+  background-color: white;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.tour-box-mid-1 h2{
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.tour-box-bottom-1 {
+  background-color: #7F76E0;
+  height: 100px;
+  padding-top: 30px;
+
+}
+
+.tour-order-button {
+  background-color: #30349C;
+  color:white;
+  width:400px;
+  height: 70px;
+  font-family: "hind","pavanam";
+  font-size:28px;
+  
+  
+}
+
+/* end tour package */
